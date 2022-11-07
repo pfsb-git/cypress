@@ -1,0 +1,14 @@
+name: Cypress Test
+on: 
+  schedule:
+  - cron: "15 20 * * *"
+jobs:
+  cypress-run:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.5.0
+      - name: Cypress.io
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          start: npm test
