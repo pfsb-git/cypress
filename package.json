@@ -1,0 +1,14 @@
+{
+  "name": "automatizacion",
+  "version": "1.0.0",
+  "description": "proyecto cypress aut",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec 'cypress/e2e/regres/aulas.cy.js'"
+  },
+  "author": "Pablo Suarez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.7.0"
+  }
+}
