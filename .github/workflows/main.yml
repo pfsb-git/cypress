@@ -1,7 +1,7 @@
 name: Cypress Test
 on: 
   schedule:
-  - cron: "15 20 * * *"
+  - cron: "10 20 * * *"
 jobs:
   cypress-run:
     runs-on: windows-latest
